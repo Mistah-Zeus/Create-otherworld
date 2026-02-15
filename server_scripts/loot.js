@@ -1,6 +1,7 @@
+/*
 LootJS.lootTables(event => {
 
-/*event
+event
     .getLootTable("confluence:chests/underground_cabins")
     .firstPool()
     .addEntry(LootEntry.of("confluence:life_crystal").withWeight(2))
@@ -280,4 +281,4 @@ event
 
             return itemEntry
         })
-})*/
+}))*/

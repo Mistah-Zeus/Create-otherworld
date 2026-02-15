@@ -1,9 +1,11 @@
 //Visit the wiki for more info - https://kubejs.com/
 
 ServerEvents.recipes(event => {
-  event.recipes.create.mixing('minecraft:diamond', 'minecraft:coal_block')
-event.recipes.create.mixing('minecraft:oak_log', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
-event.recipes.create.mixing('confulence:ammo_reservation_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
+event.recipes.create.mixing('minecraft:diamond', 'minecraft:coal_block')
+
+
+event.recipes.create.mixing(['confluence:raw_chlorophyte',CreateItem.of('confluence:raw_chlorophyte',0.25)], ['create:pulp', 'create:pulp','confluence:raw_chlorophyte']).heated()
+/*event.recipes.create.mixing('confulence:ammo_reservation_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
 event.recipes.create.mixing('confulence:archery_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
 event.recipes.create.mixing('confulence:battle_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
 event.recipes.create.mixing('confulence:biome_sight_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
@@ -39,7 +41,7 @@ event.recipes.create.mixing('confulence:thorns_potion', ['minecraft:oak_sapling'
 event.recipes.create.mixing('confulence:titan_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
 event.recipes.create.mixing('confulence:water_walking_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
 event.recipes.create.mixing('confulence:wrath_potion', ['minecraft:oak_sapling', 'minecraft:oak_sapling']).heated()
-
+*/
 
 
 
@@ -78,14 +80,6 @@ event.remove({id:'minecraft:diamond_sword'})
 event.remove({id:'minecraft:diamond_axe'})
 event.remove({id:'minecraft:diamond_shovel'})
 event.remove({id:'minecraft:diamond_pickaxe'})
-event.remove({id:'minecraft:gold_chestplate'})
-event.remove({id:'minecraft:gold_boots'})
-event.remove({id:'minecraft:gold_leggings'})
-event.remove({id:'minecraft:gold_helmet'})
-event.remove({id:'minecraft:gold_sword'})
-event.remove({id:'minecraft:gold_axe'})
-event.remove({id:'minecraft:gold_shovel'})
-event.remove({id:'minecraft:gold_pickaxe'})
 event.remove({id:'minecraft:leather_chestplate'})
 event.remove({id:'minecraft:leather_boots'})
 event.remove({id:'minecraft:leather_leggings'})
