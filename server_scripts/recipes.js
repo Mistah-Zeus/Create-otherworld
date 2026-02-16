@@ -85,3 +85,7 @@ event.remove({id:'minecraft:leather_boots'})
 event.remove({id:'minecraft:leather_leggings'})
 event.remove({id:'minecraft:leather_helmet'})
 })
+
+ServerEvents.recipes(event => {
+  event.recipes.create.filling('minecraft:water_bucket', [Fluid.of('kubejs:thin_fluid'), 'minecraft:bucket'])
+})
