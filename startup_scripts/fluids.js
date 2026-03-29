@@ -1,5 +1,5 @@
 StartupEvents.registry('fluid', event => {
-//  event.create('thick_fluid')
+
 event.create('ammo_reservation_potion')
     .displayName('Ammo reservation Potion')
     .noBlock()
@@ -168,6 +168,13 @@ event.create('water_walking_potion')
 event.create('wrath_potion')
     .tint(0x872b24)
     .displayName('Wrath Potion')
+    .noBucket()
+    .noBlock()
+
+
+event.create('venom')
+    .tint(0x872b24)
+    .displayName('Venom')
     .noBucket()
     .noBlock()
 })
