@@ -11,12 +11,18 @@ ServerEvents.tags('item', event => {
     event.add('create:crushed_raw_tungsten', 'create:crushed_raw_tungsten')
 
     event.add('c:water_bottle','confluence:bottled_water')
-    event.add('c:water_bottle','minecraft:')
 
-    event.add('c:gems/emeralds','confluence:tr_emerald')
-    event.add('c:gems/amethyst','confluence:tr_amethyst')
-    event.add('c:gems/emeralds','minecraft:emerald')
-    event.add('c:gems/amethyst','minecraft:amethyst_shard')
+
+    event.add('c:raw_ores','minecraft:raw_iron')
+    event.add('c:raw_ores','minecraft:raw_copper')
+    event.add('c:raw_ores','minecraft:raw_gold')
+    event.add('c:raw_ores','confluence:raw_tin')
+    event.add('c:raw_ores','confluence:raw_lead')
+    event.add('c:raw_ores','confluence:raw_silver')
+    event.add('c:raw_ores','confluence:raw_tungsten')
+    event.add('c:raw_ores','confluence:raw_platinum')
+    event.add('c:raw_ores','create:raw_zinc')
+
 
     event.add('minecraft:enchantment_power_transmitter','#c:not_solid')
 
