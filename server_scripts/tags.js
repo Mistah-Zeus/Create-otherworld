@@ -36,4 +36,7 @@ ServerEvents.tags('item', event => {
     event.add('c:chains','confluence:emerald_chain')
     event.add('c:chains','confluence:bone_chain')
     event.add('c:chains','confluence:silk_chain')
+
+
+    event.removeAll('minecraft:enderman_holdable')
 })

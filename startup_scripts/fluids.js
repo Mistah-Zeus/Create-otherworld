@@ -171,7 +171,6 @@ event.create('wrath_potion','thin')
     .noBucket()
     .noBlock()
 
-
 event.create('venom')
     .tint(0x872b24)
     .displayName('Venom')

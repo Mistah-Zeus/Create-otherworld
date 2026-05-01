@@ -1,8 +1,7 @@
 //Visit the wiki for more info - https://kubejs.com/
 
 ServerEvents.recipes(event => {
-event.recipes.create.mixing(['confluence:raw_chlorophyte',CreateItem.of('confluence:raw_chlorophyte',0.25)], ['create:pulp', 'create:pulp','confluence:raw_chlorophyte']).heated()
-
+//fluid mixing
 event.recipes.create.mixing(Fluid.of('kubejs:ammo_reservation_potion',250), [Fluid.of('minecraft:water',250),'confluence:moonglow','confluence:pisces_fin_cod']).heated()
 event.recipes.create.mixing(Fluid.of('kubejs:archery_potion',250), [Fluid.of('minecraft:water',250),'confluence:daybloom','confluence:lens']).heated()
 event.recipes.create.mixing(Fluid.of('kubejs:battle_potion',250), [Fluid.of('minecraft:water',250),'confluence:deathweed','#confluence:evil_material']).heated()
@@ -41,7 +40,6 @@ event.recipes.create.mixing(Fluid.of('kubejs:water_walking_potion',250), [Fluid.
 event.recipes.create.mixing(Fluid.of('kubejs:wrath_potion',250), [Fluid.of('minecraft:water',250),'confluence:deathweed','confluence:ebony_koi']).heated()
 
 
-event.recipes.create.emptying([Fluid.of('kubejs:venom'), 'minecraft:glass_bottle'], 'confluence:vial_of_venom')
 
 
 event.shaped(
@@ -77,39 +75,15 @@ Item.of('confluence:marine_gravel'), // arg 1: output
 event.shapeless(
 Item.of('confluence:slush'), // arg 1: output
 ['minecraft:snow_block','minecraft:ice','minecraft:gravel'])
-/*event.shapeless(
-Item.of('minecraft:andesite'), // arg 1: output
-['minecraft:cobblestone'])*/
-
-event.replaceInput(
-  {input: 'minecraft:amethyst_shard'}, // Arg 1: the filter
-  'minecraft:amethyst_shard',            // Arg 2: the item to replace
-  '#c:gems/amethyst'         // Arg 3: the item to replace it with
-  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
-)
-event.replaceInput(
-  {input: 'confluence:amethyst' }, // Arg 1: the filter
-  'confluence:amethyst',            // Arg 2: the item to replace
-  '#c:gems/amethyst'         // Arg 3: the item to replace it with
-  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
-)
 
 
-event.remove({id:'minecraft:diamond_chestplate'})
-event.remove({id:'minecraft:diamond_boots'})
-event.remove({id:'minecraft:diamond_leggings'})
-event.remove({id:'minecraft:diamond_helmet'})
-event.remove({id:'minecraft:diamond_sword'})
-event.remove({id:'minecraft:diamond_axe'})
-event.remove({id:'minecraft:diamond_shovel'})
-event.remove({id:'minecraft:diamond_pickaxe'})
-event.remove({id:'minecraft:leather_chestplate'})
-event.remove({id:'minecraft:leather_boots'})
-event.remove({id:'minecraft:leather_leggings'})
-event.remove({id:'minecraft:leather_helmet'})
 
+event.recipes.create.compacting(['confluence:raw_chlorophyte',CreateItem.of('confluence:raw_chlorophyte',0.2)], ['create:pulp', 'create:pulp','confluence:raw_chlorophyte']).heated()
 event.recipes.create.compacting('confluence:raw_meteorite', ['confluence:falling_star','confluence:falling_star','confluence:falling_star','confluence:falling_star','confluence:falling_star']).heated()
+event.recipes.create.compacting('confluence:raw_crimtane', ['confluence:vertabre','confluence:raw_crimtane','confluence:vicious_mushroom']).heated()
+event.recipes.create.compacting('confluence:raw_demonite', ['confluence:rotten_chunk','confluence:raw_demonite','confluence:vile_mushroom']).heated()
 
+//filling
 event.recipes.create.filling('confluence:ammo_reservation_potion', [Fluid.of('kubejs:ammo_reservation_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:archery_potion', [Fluid.of('kubejs:archery_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:battle_potion', [Fluid.of('kubejs:battle_potion',250), 'minecraft:glass_bottle'])
@@ -136,7 +110,7 @@ event.recipes.create.filling('confluence:night_owl_potion', [Fluid.of('kubejs:ni
 event.recipes.create.filling('confluence:obsidian_skin_potion', [Fluid.of('kubejs:obsidian_skin_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:rage_potion', [Fluid.of('kubejs:rage_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:shine_potion', [Fluid.of('kubejs:shine_potion',250), 'minecraft:glass_bottle'])
-//event.recipes.create.filling('confluence:sonar_potion', [Fluid.of('kubejs:sonar_potion',250), 'minecraft:glass_bottle'])
+event.recipes.create.filling('confluence:sonar_potion', [Fluid.of('kubejs:sonar_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:spelunker_potion', [Fluid.of('kubejs:spelunker_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:summoning_potion', [Fluid.of('kubejs:summoning_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:thorns_potion', [Fluid.of('kubejs:thorns_potion',250), 'minecraft:glass_bottle'])
@@ -146,5 +120,6 @@ event.recipes.create.filling('confluence:wrath_potion', [Fluid.of('kubejs:wrath_
 
 
 event.recipes.create.filling('terra_guns:venom_bullet', [Fluid.of('kubejs:venom',2), 'confluence:empty_bullet'])
+event.recipes.create.emptying([Fluid.of('kubejs:venom'), 'minecraft:glass_bottle'], 'confluence:vial_of_venom')
 
 })
