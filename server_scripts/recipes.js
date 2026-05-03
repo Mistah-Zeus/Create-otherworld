@@ -80,7 +80,7 @@ Item.of('confluence:slush'), // arg 1: output
 
 event.recipes.create.compacting(['confluence:raw_chlorophyte',CreateItem.of('confluence:raw_chlorophyte',0.2)], ['create:pulp', 'create:pulp','confluence:raw_chlorophyte']).heated()
 event.recipes.create.compacting('confluence:raw_meteorite', ['confluence:falling_star','confluence:falling_star','confluence:falling_star','confluence:falling_star','confluence:falling_star']).heated()
-event.recipes.create.compacting('confluence:raw_crimtane', ['confluence:vertabre','confluence:raw_crimtane','confluence:vicious_mushroom']).heated()
+event.recipes.create.compacting('confluence:raw_crimtane', ['confluence:vertebra','confluence:raw_crimtane','confluence:vicious_mushroom']).heated()
 event.recipes.create.compacting('confluence:raw_demonite', ['confluence:rotten_chunk','confluence:raw_demonite','confluence:vile_mushroom']).heated()
 
 //filling
@@ -110,7 +110,7 @@ event.recipes.create.filling('confluence:night_owl_potion', [Fluid.of('kubejs:ni
 event.recipes.create.filling('confluence:obsidian_skin_potion', [Fluid.of('kubejs:obsidian_skin_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:rage_potion', [Fluid.of('kubejs:rage_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:shine_potion', [Fluid.of('kubejs:shine_potion',250), 'minecraft:glass_bottle'])
-event.recipes.create.filling('confluence:sonar_potion', [Fluid.of('kubejs:sonar_potion',250), 'minecraft:glass_bottle'])
+//event.recipes.create.filling('confluence:sonar_potion', [Fluid.of('kubejs:sonar_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:spelunker_potion', [Fluid.of('kubejs:spelunker_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:summoning_potion', [Fluid.of('kubejs:summoning_potion',250), 'minecraft:glass_bottle'])
 event.recipes.create.filling('confluence:thorns_potion', [Fluid.of('kubejs:thorns_potion',250), 'minecraft:glass_bottle'])

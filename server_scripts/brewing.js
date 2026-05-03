@@ -1,10 +1,10 @@
 
-    /**
+    /*
      * 1. Argument: The top ingredient of the brewing stand
      * 2. Argument: The bottom ingredient of the brewing stand
      * 3. Argument: The result of the brewing
      */
-
+/*
 MoreJS.registerPotionBrewing(event => {
 
 //base potions
@@ -331,4 +331,4 @@ event.addCustomBrewing(
         }),
         Item.of("minecraft:potion", { Potion: "kubejs:moonglow_daybloom_infused" }) // This is a custom made potion. It's not vanilla
     );
-});
+});*/
