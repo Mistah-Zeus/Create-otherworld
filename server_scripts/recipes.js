@@ -50,7 +50,7 @@ event.shaped(
     ' A '
   ],
   {
-    A: 'create:copper_sheet',
+    A: 'minecraft:copper_nugget',
     B: 'create:brass_nugget'  //arg 3: the mapping object
   }
 )
